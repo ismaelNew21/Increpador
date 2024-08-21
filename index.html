@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Days+One&family=Poppins:wght@500;600;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/iconoPestania.ico" type="image/x-icon"><!--link del icono de la pestania-->
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+
+    <!-- link de estilos  -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <!-- lik de alertas advertencia -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Encriptador</title>
+    
+</head>
+<body>
+     <!-- principal -->
+      <div class="container">
+        <div class="contenedorCentral">
+            <div class="contenedorIzquierdo">
+                <div class="logo">
+                    <p class="logo"><span style="--item:1"><img src="./imagenes/logo.svg" alt="" ></span></p>
+                </div>
+                <div class="entradaTexto">
+                    <textarea name="textAreaIzq" class="textAreaIzq" id="textAreaIzq" cols="30" rows="13" placeholder="Ingresar el texto aquí"></textarea>
+                </div>
+
+                <div class="advertencias">
+                    <p class="advertencia"><i class="iconAdvertencia">&#9888;</i> Solo letras minúsculas y sin acentos </p>
+                </div>
+
+               <div class="contenedorBotonesIzquierdo">
+                    <input type="button" value="Encriptar" class="boton encriptar" onclick="encriptar()">
+                    <input type="button" value="Desencriptar" class="boton desencriptar" onclick="desencriptar()">
+                </div>
+            </div>
+
+            <div class="contenedorDerecho">
+                <div id="salidaDetexto" class="salidaDetexto">
+                    <textarea id="textAreaDer" class="textAreaDer" cols="30" rows="7"></textarea>
+                </div>
+                <div id="contenedorBotonesDerecho" class="contenedorBotonesDerecho">
+                    <input type="button" value="&#128221;Copiar" class="boton copiar" onclick="copy()">
+                </div>
+
+                <!--visible mientras no tenga texto para incriptar o desincriptar-->
+                <div id="sinMensaje" class="sinMensaje">
+                    <img src="./imagenes/oops4.png" class="dibujo">
+                    <p class="textoSinMensaje1">Ningún mensaje<br>fue encontrado</p>
+                    <p class="textoSinMensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                </div>
+            </div>
+
+        </div>
+      </div>
+
+      <footer>
+        <div class="footerMain">
+            <div class="designed">
+                <p>&copy; Desarrollado por salomoncuro<span class="nameDesigned"><a href="" target="_blank"></a></span> </p>
+                <a href="#" rel="">
+                    <img src="./imagenes/github.svg" alt="Logo Github" class="git">
+                </a>
+                <a href="https://www.linkedin.com/in/salom%C3%B3n-vel%C3%A1squez-646263219/" rel="">
+                    <img src="./imagenes/linkedin.svg" alt="Logo Linkedin" class="linked">
+                </a>
+                
+            </div>
+
+        </div>
+      </footer>
+
+      <script src="JS/encriptado.js"></script> 
+      
+</body>
+</html>

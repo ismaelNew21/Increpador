@@ -1,0 +1,271 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*MODOFICACIONES AL SCROLL BAR ORIGINAL */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Toda la linea */
+::-webkit-scrollbar-track {
+    background: #00000000;
+}
+
+/* indicador */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+}
+
+/* indicador hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(67, 93, 114, 0.574);
+}
+
+/*MODOFICACIONES -principal */
+body{
+    background-color: #537ee4;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.contenedorCentral{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1000px;
+    margin: 0 10px 20px 10px;
+}
+.contenedorIzquierdo{
+    flex: 10 1 auto;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 20px;
+}
+.logo{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+img{
+    padding-top: 10px;
+}
+.entradaTexto{
+    height: 65%;
+    padding-left: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.textAreaIzq{
+    width: 90%;
+    height: 80%;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    border-style: none;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.741);
+}
+.textAreaIzq::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.advertencias {
+    height: 5%;
+}
+.advertencias .iconAdvertencia {
+    color: rgb(215, 110, 4);
+    font-size: large;
+}
+.advertencia{
+    padding-left: 14%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.63);
+}
+.contenedorBotonesIzquierdo {
+    height: 15%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.boton{
+    width: 35%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    padding: 6px;
+    height: 35px;
+    color: rgba(255, 255, 255, 0.696);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.boton:hover{
+     transform: scale(1.04);
+    box-shadow: 1px 1px 8px #fff;
+    transition: 0.5s transform;
+}
+.boton:active{
+    background: #dadada43;
+}
+.encriptar{
+    background-color: rgb(4, 25, 68);
+    margin-right: 20px;
+}
+.desencriptar{
+    background-color: rgb(221, 128, 47);
+}
+.contenedorDerecho{
+    flex: 1 1 auto;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.salidaTexto{
+    height: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 90px 10px 10px 10px;
+}
+.textAreaDer{
+    width: 90%;
+    height: 90%;
+    padding: 40px 10px 10px 10px;
+    border-style: none;
+    resize: none;
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.741);
+}
+.contenedorBotonesDerecho{
+    height: 15%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.copiar{
+    width: 80%;
+    background-color: #0812d8;
+}
+.sinMensaje{
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.dibujo{
+    width: 255px;
+    opacity: 0.5;
+}
+.textoSinMensaje1{
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1.5rem;
+}
+.textoSinMensaje2{
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.708);
+    font-size: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+.footerMain{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 15px;
+    padding: 10px 50px;
+    width: 1000px;
+    margin: 0px 10px;
+}
+.designed{
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.782);
+    font-style: italic;
+    text-align: center;
+}
+.nameDesigned{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.01PX;
+}
+.nameDesigned a{
+    color: rgb(3, 234, 242);
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.01PX;
+}
+
+/*Media query tablet*/
+@media all and (max-width:750px) {
+
+    .contenedorCentral {
+        flex-flow: column nowrap;
+    }
+
+    .contenedorIzquierdo {
+        margin: 0 0 20px 0;
+    }
+
+    .contenedorDerecho {
+        padding-bottom: 25px;
+    }
+
+    .dibujo {
+        display: none;
+    }
+}
+/* Media query celular*/
+@media all and (max-width:450px) {
+
+    .contenedorBotonesIzquierdo {
+        flex-flow: column nowrap;
+        margin: 10px 0px 25px 0px;
+    }
+
+    .boton {
+        width: 80%;
+    }
+
+    .encriptar {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .entradaTexto {
+        padding-left: 0;
+    }
+}
